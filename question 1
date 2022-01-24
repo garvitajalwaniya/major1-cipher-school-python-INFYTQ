@@ -1,0 +1,10 @@
+def twoSum(nums, target):
+        lst=[]
+        for x in range(len(nums)):
+            for y in range(x+1,len(nums)):
+                #print(nums[y],"H")
+                if nums[x]+nums[y]==target:
+                    #print(x,y,nums[y])
+                    lst.extend([x,y])
+        lst=list(set(lst))
+        return lst
